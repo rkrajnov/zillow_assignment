@@ -61,9 +61,9 @@ function PhotoGallery(props){
              onTouchStart={(event) => swipeStart(event)}
              onTouchEnd={(event) => swipeEnd(event)}
         >
-            <Photo photo={state.picList[state.index]}/> <br/>
-            <button className='photo-gallery__arrow photo-gallery__arrow--left' onClick={onClickPrevious}> &lt; </button>
-            <button className='photo-gallery__arrow photo-gallery__arrow--right' onClick={onClickNext}> &gt; </button>
+            <Photo photo={state.picList[state.index]} photoId={state.index}/> <br/>
+            <a className='photo-gallery__arrow photo-gallery__arrow--left' onClick={onClickPrevious}> &#10094; </a>
+            <a className='photo-gallery__arrow photo-gallery__arrow--right' onClick={onClickNext}> &#10095; </a>
         </div>
     );
 }

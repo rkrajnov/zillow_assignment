@@ -3,11 +3,11 @@ import noImage from '../images/noImage.jpg'
 import PropTypes from 'prop-types'
 
 function Photo(props) {
-    const {photo={}} = props
+    const {photo={}, photoId} = props
     const defaultCaption = 'No caption available'
 
   return (
-    <div className="photo">
+    <div id='imageDiv' key={photoId} className='photo fade'>
       <img
         src={photo.img || noImage}
         alt={photo.caption || defaultCaption}

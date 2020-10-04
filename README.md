@@ -1,5 +1,11 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+This project works with either clicking the buttons to flip <br />
+the pictures or swiping on a touch screen. <br/>
+
+One bad object has been passed in to simulate default <br/>
+error handling.
+
 ## Available Scripts
 
 In the project directory, you can run:
