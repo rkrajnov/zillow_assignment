@@ -1,26 +1,29 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import PhotoGallery from './PhotoGallery'
+import house1 from './images/house1.jpg'
+import house2 from './images/house2.jpg'
+import house3 from './images/house3.jpg'
+import house4 from './images/house4.jpg'
+
+const houses = [{
+    img: house1,
+    caption: 'House with a pool'
+}, {
+    img: house2,
+    caption: 'Traditional home'
+}, {
+    img: house3,
+    caption: 'Modern home'
+}, {
+    img: house4,
+    caption: 'Trendy home'
+}, {}
+]
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return(
+        <PhotoGallery photos={houses}/>
+    )
 }
 
 export default App;
